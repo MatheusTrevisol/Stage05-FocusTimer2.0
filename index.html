@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/index.js" type="module" defer></script>
+    <title>Focus Timer 2.0</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="timer">
+          <h1>
+            <span id="minutes">25</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+          </h1>
+
+          <div class="controls">
+            <button class="play" type="button">
+              <img src="./images/play.svg" alt="Play" />
+            </button>
+            <button class="pause hide" type="button">
+              <img src="./images/pause.svg" alt="Pause" />
+            </button>
+            <button class="stop" type="button">
+              <img src="./images/stop.svg" alt="Stop" />
+            </button>
+            <button class="increaseVolume" type="button">
+              <img src="./images/increase.svg" alt="+" />
+            </button>
+            <button class="decreaseVolume" type="button">
+              <img src="./images/decrease.svg" alt="-" />
+            </button>
+          </div>
+        </div>
+
+        <div class="musics">
+          <button id="btnForest" class="musicButtons bg-button" type="button">
+            <img
+              src="./images/forest.svg"
+              alt="Árvore simbolizando uma floresta"
+            />
+          </button>
+          <button id="btnRain" class="musicButtons bg-button" type="button">
+            <img src="./images/rain.svg" alt="Nuvem com chuva" />
+          </button>
+          <button id="btnCoffee" class="musicButtons bg-button" type="button">
+            <img src="./images/coffeeShop.svg" alt="Coffee Shop" />
+          </button>
+          <button id="btnCampfire" class="musicButtons bg-button" type="button">
+            <img src="./images/campfire.svg" alt="Lareira" />
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

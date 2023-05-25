@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font-size */
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+  --fs-h1: 12.6rem;
+
+  /* background */
+  --bg-main: #ffffff;
+  --bg-music-buttons: #e1e1e6;
+  --bg-forest: rgb(15, 116, 15);
+  --bg-rain: #02799d;
+  --bg-coffee: rgb(112, 16, 112);
+  --bg-campfire: rgb(96, 0, 0);
+
+  /* colors */
+  --fc-all-items: #323238;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fs-body);
+}
+
+button {
+  border: none;
+  background: none;
+  color: var(--fc-all-items);
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  background: var(--bg-main);
+}
+
+main .container {
+  max-width: 82.1rem;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  gap: 19.2rem;
+}
+
+.container .timer img {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+main .container .timer {
+  justify-self: center;
+  align-self: center;
+}
+
+main .container h1 {
+  display: flex;
+  font-weight: 500;
+  font-size: var(--fs-h1);
+  line-height: 14.8rem;
+  color: var(--fc-all-items);
+  text-transform: uppercase;
+  justify-content: center;
+  align-content: center;
+}
+
+.controls {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1.7rem;
+}
+
+.musics {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.musics button {
+  border-radius: 24px;
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+.musics .bg-button {
+  background: var(--bg-music-buttons);
+}
+
+.forest {
+  background-color: var(--bg-forest);
+}
+
+.rain {
+  background-color: var(--bg-rain);
+}
+
+.coffee {
+  background-color: var(--bg-coffee);
+}
+
+.campfire {
+  background-color: var(--bg-campfire);
+}
+
+/* @mediaqueries */
+@media (max-width: 830px) {
+  main .container h1 {
+    font-size: 8.5rem;
+    line-height: 12rem;
+  }
+
+  main .container {
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .musics button {
+    border-radius: 24px;
+    background: var(--bg-music-buttons);
+    width: 10.8rem;
+    height: 12.2rem;
+  }
+
+  .container .timer img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .controls {
+    margin-top: 0;
+  }
+}
